@@ -814,7 +814,7 @@ a.button-frame.frame-three:hover:after{
 
 /* Button 1 */
 #button-1 .knobs:before {
-  content: "REPL";
+  content: "GIT";
   position: absolute;
   top: 4px;
   left: 4px;
@@ -832,7 +832,7 @@ a.button-frame.frame-three:hover:after{
 }
 
 #button-1 .checkbox:checked + .knobs:before {
-  content: "GIT";
+  content: "REPL";
   left: 42px;
   background-color: #0051ca;
 }
@@ -1083,21 +1083,53 @@ div.omrs-input-group {
 
 
 .gba-filter-hide {
-  height: 25px;
+  /* height: 25px; */
   background: var(--secondary-color);
-  border-radius: 18px;
+  border-radius: 100px;
   justify-content: center;
-  margin-bottom: 10px;
+  margin-bottom: 7px;
 
 }
 
 .bar-text {
   color: var(--font-color) !important;
   font-family: 'Baloo Da' !important;
-  font-size: 26px !important;
+  font-size: 18px !important;
   margin-bottom: 5px;
 }
 
 a {
   color: var(--primary-color);
+}
+
+.fav-bar-style {
+  background: var(--font-color);
+  border-radius: 50px;
+  justify-content: center;
+  margin-bottom: 7px;
+  margin-top: 10px;
+}
+
+.fav-bar-style h1 {
+  font-size: 28px;
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+.fav-bar-style p {
+  font-size: 18px;
+  color: var(--primary-color);
+  font-style: italic;
+}
+
+.fav-bar-style a {
+  font-size: 18px;
+  color: var(--primary-color);
+}
+
+.fav-border-style {
+  border: 3px solid #3e1687;
+  border-radius: 15px;
+  padding: 10px;
+  margin-bottom: 7px;
 }

@@ -1,0 +1,112 @@
+{
+"name": "MSG Retro Emulator",
+"short_name": "MSG Emulator",
+"start_url": "https://cattn.github.io/gba",
+"display": "standalone",
+"description": "An emulator provided by the folks at MSG! We have a wide variety of retro games for you to enjoy, with more being added regularly!",
+"lang": "en-US",
+"dir": "auto",
+"theme_color": "#c8c8c8",
+"background_color": "#c8c8c8",
+"orientation": "any",
+"icons": [
+    {
+        "src": "pwa/manifest-icon-512.maskable.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "maskable"
+    },
+    {
+        "src": "pwa/manifest-icon-192.maskable.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "maskable"
+    }
+],
+"screenshots": [
+    {
+        "src": "pwa/home.png",
+        "sizes": "2560x1440",
+        "type": "image/png",
+        "description": "A screenshot of the home page"
+    },
+    {
+        "src": "pwa/advamcewars-emu.png",
+        "sizes": "2560x1440",
+        "type": "image/png",
+        "description": "A screenshot of a game"
+    },
+    {
+        "src": "pwa/favi.png",
+        "sizes": "2560x1440",
+        "type": "image/png",
+        "description": "A screenshot of a favorites list"
+    },
+    {
+        "src": "pwa/testlaunch.png",
+        "sizes": "2560x1440",
+        "type": "image/png",
+        "description": "A screenshot of the Custom ROM Loader"
+    },
+    {
+        "src": "pwa/old-emu.png",
+        "sizes": "2560x1440",
+        "type": "image/png",
+        "description": "A screenshot of the old GBA emulator"
+    },
+    {
+        "src": "pwa/themes.png",
+        "sizes": "2560x1440",
+        "type": "image/png",
+        "description": "A screenshot of the themes page"
+    },
+    {
+        "src": "pwa/green-home.png",
+        "sizes": "2560x1440",
+        "type": "image/png",
+        "description": "A screenshot of the home page in green"
+    },
+    {
+        "src": "pwa/green-favi.png",
+        "sizes": "2560x1440",
+        "type": "image/png",
+        "description": "A screenshot of a favorites list in green"
+    }
+],
+"related_applications": [],
+"shortcuts": [
+    {
+        "name":"GBA Emulator",
+        "url":"gba.html",
+        "description":"Our GBA games"
+    },
+    {
+        "name":"NES Emulator",
+        "url":"nes.html",
+        "description":"Our NES games"
+    },
+    {
+        "name":"SNES Emulator",
+        "url":"snes.html",
+        "description":"Our SNES games"
+    },
+    {
+        "name":"Sega Genesis Emulator",
+        "url":"segaMS.html",    
+        "description":"Our Sega Genesis games"
+    },
+    {
+        "name":"Uplaod ROM",
+        "url":"testlaunch.html",
+        "description":"Upload your own ROMs"
+    }
+],
+"categories": [
+    "education",
+    "kids",
+    "lifestyle",
+    "productivity"
+  ]
+
+
+}

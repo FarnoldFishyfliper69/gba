@@ -71,6 +71,7 @@ html {
     float: right;
 }
 
+
 .setting-nav {
     display: flex;
     font-family: 'Baloo Da';
@@ -252,6 +253,13 @@ color: var(--bg-color);
     width: 600px;
     height: 70px;
     background: #B54C4C;
+    border: 3px solid #000000;
+}
+
+.snes-emu-tile {
+    width: 600px;
+    height: 70px;
+    background: #e0882a;
     border: 3px solid #000000;
 }
 

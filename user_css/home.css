@@ -246,6 +246,8 @@ color: var(--bg-color);
 
 
 .gba-tile-wrap {
+    display: table;
+  margin: 0 auto;
 }
 
 
@@ -265,12 +267,8 @@ color: var(--bg-color);
 
 
 .wrapper-tile-1 {
-    float: center;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 27%;
-    margin-bottom: 1%;
+	width:100%;
+	margin-bottom: 1%;
 }
 
 .tile-text {
@@ -333,11 +331,7 @@ text-decoration: underline;
 
 
 .wrapper-tile {
-    float: center;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 27%;
+	width:100%;
 }
 
 .tile-text-1 {
@@ -496,3 +490,24 @@ text-decoration: underline;
         margin-bottom: 3%;
     }
   }
+
+
+.register-real {
+    width: 200px;
+    height: 50px;
+    background: var(--secondary-color);
+    border: 3px solid #000000;
+    font-family: 'Baloo Da';
+    cursor: pointer;
+    color: var(--heading-color);
+}
+
+.register-real:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+    /* good enough */
+}
+
+.register-button {
+    padding-right: 75px;
+}

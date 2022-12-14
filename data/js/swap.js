@@ -1,6 +1,17 @@
 let isCheck = 0;
 let is1Check = 0;
+let isNet = 0;
+let doOldCores = false;
 
+let isNetDat = localStorage.getItem("isNet");
+isNet = JSON.parse(isNetDat);
+
+if (isNet == 1) {
+  doOldCores = true;
+}
+if (isNet == 0) {
+    doOldCores = false;
+}
     let gameTextDat = localStorage.getItem("gameSetText");
     let gameText = JSON.parse(gameTextDat);
     let isCheckdata = localStorage.getItem("isCheck");

@@ -62,18 +62,20 @@ function searchBar() {
     // Loop through all list items, and hide those who don't match the search query
     const searchRegex = new RegExp(filter, 'i');
 
-const liArray = Array.from(li);
-liArray.forEach((item) => {
-  const a = item.getElementsByTagName("a")[0];
-  const txtValue = a.textContent || a.innerText;
-  if (searchRegex.test(txtValue)) {
-    item.style.display = "";
-    ul.style.display = "block";
-    warning.innerHTML = '';
-  } else {
-    item.style.display = "none";
-  }
-});
+    const liArray = Array.from(li);
+    liArray.forEach((item) => {
+      const a = item.getElementsByTagName("a")[0];
+      if (a) {
+        const txtValue = a.textContent || a.innerText;
+        if (searchRegex.test(txtValue)) {
+          item.style.display = "";
+          ul.style.display = "block";
+          warning.innerHTML = '';
+        } else {
+          item.style.display = "none";
+        }
+      }
+    });
     
     }
 
@@ -165,6 +167,23 @@ function netPlay() {
   console.log(isNet);
 }
 
+let doGitHack = 0;
+let gitHackDat = localStorage.getItem("doGitHack");
+doGitHack = JSON.parse(gitHackDat);
+
+function gitHack() {
+  console.log("real")
+  doGitHack = localStorage.getItem("doGitHack");
+  if (doGitHack == 1) {
+    doGitHack = 0;
+    console.log("swapped1");
+  } else {
+    doGitHack = 1;
+    console.log("Swapped");
+  }
+  localStorage.setItem("doGitHack", JSON.stringify(doGitHack));
+}
+
 function buttonLoad2() {
   let isNetdata = localStorage.getItem("isNet");
   isNet = JSON.parse(isNetdata);
@@ -173,3 +192,12 @@ function buttonLoad2() {
   }
 }
 buttonLoad2();
+
+function buttonLoad3() {
+  let isDoGitHackData = localStorage.getItem("doGitHack");
+  doGitHack = JSON.parse(isDoGitHackData);
+  if (doGitHack == 1) {
+  document.getElementById("swapHack").checked = true;
+  }
+}
+buttonLoad3();
